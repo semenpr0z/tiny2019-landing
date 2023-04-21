@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">TYNY <b>2019</b></span>
+      <div class="line"></div>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__list__link"><a href="#">Конференция</a></li>
+          <li class="navbar__list__link"><a href="#">Программа</a></li>
+          <li class="navbar__list__link"><a href="#">Спикеры</a></li>
+          <li class="navbar__list__link"><a href="#">Фото</a></li>
+          <li class="navbar__list__link"><a href="#">Материалы</a></li>
+        </ul>
+        <button class="btn-registration">Регистрация</button>
+        <div class="social">
+          <img src="/svg/icon-mail.svg" alt="Электронная почта" />
+          <img src="/svg/icon-facebook.svg" alt="Facebook" />
+        </div>
+      </nav>
+      <button class="burger-menu">
+        <img src="/svg/icon-burger-menu.svg" alt="Открыть меню" />
+      </button>
+    </header>
+    <main class="main">
+      <section class="promo container">
+        <div class="wrapper">
+          <div class="date-and-btn">
+            <div class="date">
+              <img class="type" src="/svg/conference.svg">
+              <div class="date-text">
+                <h2>12 ноября</h2>
+                <h1>This Year <br>  Next Year</h1>
+                <div class="companies">
+                  <img class="groupm" src="/svg/icon-groupM.svg" alt="wavemaker">
+                  <img class="mindshare" src="/svg/icon-mindshare.svg" alt="wavemaker">
+                  <img class="meadiacom" src="/svg/icon-meadiacom.svg" alt="wavemaker">
+                  <img class="wavemaker" src="/svg/icon-wavemaker.svg" alt="wavemaker">
+                </div>
+              </div>
+            </div>
+            <button>зарегистрироваться</button>
+          </div>
+          <img src="/img/background-promo.png" alt="" />
+        </div>
+        <div class="text-wrapper">
+          <h5>
+            Команда рекламного холдинга GroupM рада открыть для вас двери
+            digital-конференции NextM!
+          </h5>
+          <p>
+            NextM – это ежегодная digital-конференция, организованная ведущей
+            международной рекламной группой GroupM, входящей в состав
+            коммуникационного холдинга WPP и представленной в России агентствами
+            Mindshare, MediaCom и Wavemaker.
+          </p>
+        </div>
+        <a href="#feedback" class="arrow"><img src="/svg/icon-arrow.svg" alt="Вниз" /></a>
+        <!-- Поскольку в тз не описано, что стрелка делает сделал из нее "оглавление" -->
+      </section>
+      <section class="speakers">
+        <div class="container">
+          <h2 class="speakers__h2">Спикеры</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="speaker">
+                  <div class="text">
+                    <h5>Ярон Фаризон</h5>
+                    <p>CEO MediaCom</p>
+                  </div>
+                  <img src="/img/speaker.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="speaker">
+                  <div class="text">
+                    <h5>Ярон Фаризон</h5>
+                    <p>CEO MediaCom</p>
+                  </div>
+                  <img src="/img/speaker.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="speaker">
+                  <div class="text">
+                    <h5>Ярон Фаризон</h5>
+                    <p>CEO MediaCom</p>
+                  </div>
+                  <img src="/img/speaker.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="speaker">
+                  <div class="text">
+                    <h5>Ярон Фаризон</h5>
+                    <p>CEO MediaCom</p>
+                  </div>
+                  <img src="/img/speaker.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="speaker">
+                  <div class="text">
+                    <h5>Ярон Фаризон</h5>
+                    <p>CEO MediaCom</p>
+                  </div>
+                  <img src="/img/speaker.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section id="feedback" class="feedback">
+        <h2>Отправить сообщение</h2>
+        <form>
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Ваше имя" />
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-row">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Ваше сообщение"
+            ></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+        <div class="contacts">
+          <p>
+            <a class="email" href="mailto:info@groupmnextm.ru">
+              info@groupmnextm.ru
+            </a>
+          </p>
+          <p><a class="tel" href="tel:+74956414080">+7 (495) 641-40-80</a></p>
+          <p><a class="law" href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a></p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
